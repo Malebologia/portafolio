@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+
+    <!-- NOTEBOOK CONTAINER -->
+    <div class="notebook">
+
+        <!-- Notebook Screen -->
+        <div class="notebook__screen">
+
+            <!-- Desktop Background -->
+            <div class="desktop">
+
+                <!-- Barra superior -->
+                <div class="taskbar">
+                    <div class="taskbar__time" id="clock"></div>
+                    <div class="taskbar__icons">
+                       <i class="fas fa-wifi"></i>
+                       <i class="fas fa-volume-up"></i>
+                       <i class="fas fa-battery-full"></i>
+                </div>
+            </div>
+
+            <!-- ========================= -->
+            <!-- Ventana: PERFIL -->
+            <!-- ========================= -->
+            <div class="window" id="window-profile" style="top: 50px; left:50px;">
+                <div class="window__header">
+                    <div class="window__title">
+                        <i class="fas fa-user"></i> Mi Perfil
+                    </div>
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize" aria-label="Minimizar ventana">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <button class="window__btn window__btn--maximize" aria-label="Maximizar ventana">
+                            <i class="fas fa-square"></i>
+                        </button>
+                        <button class="window__btn window__btn--close" aria-label="Cerrar ventana">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="window__content">
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/120" alt="Foto de perfil" class="profile__image">
+                        <h3 class="profile__name">Alonso Soto</h3>
+                        <p class="profile__title">Desarrollador Frontend</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= -->
+            <!-- Ventana: CONTACTO -->
+            <!-- ========================= -->
+            <div class="window" id="window-contact" style="top: 100px; left: 350px;">
+                <div class="window__header">
+                    <div class="window__title">
+                        <i class="fas fa-address-card"></i> Información de Contacto
+                    </div>
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize"><i class="fas fa-minus"></i></button>
+                        <button class="window__btn window__btn--maximize"><i class="fas fa-square"></i></button>
+                        <button class="window__btn window__btn--close"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="window__content">
+                    <div class="contact-info">
+                        <div class="contact-info__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Parral, Chile</span>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alonsosotosan@protonmail.com</span>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 5924 6269</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= -->
+            <!-- Ventana: REDES SOCIALES -->
+            <!-- ========================= -->
+            <div class="window" id="window-social" style="top: 150px; left: 650px;">
+                <div class="window__header">
+                    <div class="window__title">
+                        <i class="fas fa-share-alt"></i> Redes Sociales
+                    </div>
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize"><i class="fas fa-minus"></i></button>
+                        <button class="window__btn window__btn--maximize"><i class="fas fa-square"></i></button>
+                        <button class="window__btn window__btn--close"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="window__content">
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/alonso-soto-9a689ab9"
+                           target="_blank"
+                           class="social-links__item social-links__item--linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="https://github.com/Malebologia"
+                           target="_blank"
+                           class="social-links__item social-links__item--github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= -->
+            <!-- Ventana: ACERCA DE MÍ -->
+            <!-- ========================= -->
+            <div class="window" id="window-about" style="top: 350px; left: 100px;">
+                <div class="window__header">
+                    <div class="window__title">
+                        <i class="fas fa-info-circle"></i> Acerca de mí
+                    </div>
+                    <div class="window__controls">
+                        <button class="window__btn window__btn--minimize"><i class="fas fa-minus"></i></button>
+                        <button class="window__btn window__btn--maximize"><i class="fas fa-square"></i></button>
+                        <button class="window__btn window__btn--close"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+
+                <div class="window__content">
+                    <p>Desarrollador web apasionado por crear experiencias digitales únicas. Especializado en Frontend con experiencia en múltiples tecnologías.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Notebook Base -->
+        <div class="notebook__base"></div>
+        <div class="notebook__keyboard"></div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
